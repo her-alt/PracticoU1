@@ -11,4 +11,4 @@ o empresa de alquiler de viviendas.
 ## 📋 Transcripción de la Entrevista del Dueño de Alquiler de Casas
 
 *   **Entrevistador:** Estudiante de Ingeniería Informática (UAGRM)
-*   **Entrevistado:** Don Freddy (Líder del grupo de transportistas)
+*   **Entrevistado:** Hernan Fernandez/Dueño de la casa en alquiler
