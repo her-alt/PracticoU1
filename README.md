@@ -21,3 +21,17 @@ o empresa de alquiler de viviendas.
 > Quiero registrar los datos de cada casa, como su dirección, zona, número de habitaciones, precio mensual y estado.
 > También necesito saber quién está alquilando cada casa, desde qué fecha hasta qué fecha y si realizó el pago correspondiente. Además,
 > quiero poder consultar qué casas están disponibles y cuáles están alquiladas”
+
+**Suposiciones:**
+
+* Se identifica a cada inquilino de manera única mediante su número de teléfono o documento de identidad.
+* Una persona puede alquilar una casa por un determinado período de tiempo. Una misma persona puede realizar varios alquileres en diferentes fechas, mientras que cada casa puede ser alquilada por diferentes personas a lo largo del tiempo.
+* Cada casa tiene una dirección, zona, número de habitaciones, precio mensual y un estado que indica si está disponible o alquilada.
+* Cada contrato de alquiler corresponde a una sola casa y a un solo inquilino, registrando la fecha de inicio, fecha de finalización y el monto acordado.
+* Los pagos realizados por el inquilino se registran indicando la fecha, el monto y el método de pago utilizado.
+
+---
+
+## 📐 Diseño Conceptual (UML)
+
+A continuación se presenta el diagrama de clases generado en **StarUML** que modela los requerimientos descritos en la entrevista:
