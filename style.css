@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    padding: 25px 5%;
+    border-bottom: 1px solid #30363d;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* TÍTULOS */
+
+h2 {
+    margin-bottom: 15px;
+    color: #e6edf3;
+}
+
+section {
+    padding: 25px 0;
+    border-bottom: 1px solid #30363d;
+}
+
+
+/* PROYECTO */
+
+.proyecto h2 {
+    font-size: 28px;
+}
+
+.proyecto p {
+    font-size: 16px;
+    color: #c9d1d9;
+}
+
+strong {
+    color: #ffffff;
+}
+
+
+/* DATOS DE ENTREVISTA */
+
+.datos {
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.datos p {
+    margin: 5px 0;
+}
+
+
+/* DISTRIBUCIÓN */
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 25px;
+}
+
+
+/* ENTREVISTA */
+
+.entrevista {
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    background: #11161d;
+}
+
+.entrevista h2 {
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+}
+
+.pregunta {
+    margin-top: 20px;
+    color: #f0f6fc;
+}
+
+.respuesta {
+    margin-top: 5px;
+    padding-left: 15px;
+    color: #8b949e;
+}
+
+
+/* UML */
+
+.uml {
+    padding: 5px;
+}
+
+.uml h2 {
+    margin-bottom: 15px;
+}
+
+
+/* DIAGRAMA */
+
+.diagrama {
+    min-height: 520px;
+    background: #f6f8fa;
+    border: 2px solid #58a6ff;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 20px;
+    color: #111;
+}
+
+
+/* ACTORES */
+
+.actor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.actor span {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+/* SISTEMA */
+
+.sistema {
+    width: 330px;
+    min-height: 470px;
+
+    border: 2px solid #333;
+    background: white;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.sistema h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/* CASOS DE USO */
+
+.caso {
+    width: 230px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background: #dceeff;
+
+    border: 2px solid #2188ff;
+
+    border-radius: 50px;
+
+    color: #123;
+
+    font-size: 15px;
+}
+
+
+/* CONCLUSIÓN */
+
+.conclusion {
+    margin-top: 25px;
+    padding: 20px;
+
+    border-left: 4px solid #58a6ff;
+
+    background: #1152ad;
+}
+
+.conclusion p {
+    color: #c9d1d9;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    padding: 25px;
+
+    color: #8b949e;
+
+    border-top: 1px solid #30363d;
+
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .diagrama {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .sistema {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+}
