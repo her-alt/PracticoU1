@@ -31,6 +31,39 @@ o empresa de alquiler de viviendas.
 
 ---
 
+# Entidades y atributos
+
+**INQUILINO**
+* id_inquilino(PK)
+* CI
+* Nombre
+* Apellido
+* Teléfono
+ 
+**CASA**
+* id_casa(PK)
+* Dirección
+* Zona
+* Habitaciones
+* Estado
+
+**CONTRATO**
+* id_contrato (PK)
+* Fecha_inicio
+* Fecha_fin
+* Monto_mensual
+
+**PAGO**
+* id_pago (PK)
+* Fecha_pago
+* Monto
+* Método
+
+**Cardinalidades**
+INQUILINO 1 ─ N CONTRATO
+CASA 1 ─ N CONTRATO
+CONTRATO 1 ─ N PAGO
+
 ## 📐 Diseño Conceptual (UML)
 
 A continuación se presenta el diagrama de clases generado en **StarUML** que modela los requerimientos descritos en la entrevista:
