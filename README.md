@@ -76,7 +76,7 @@ entity INQUILINO {
 
 entity CASA {
   *id_casa : INT
-  direccion : VARCHAR
+  dirrecion: VARCHAR 
   zona : VARCHAR
   habitaciones : INT
   estado : VARCHAR
