@@ -64,6 +64,38 @@ INQUILINO 1 ─ N CONTRATO
 CASA 1 ─ N CONTRATO
 CONTRATO 1 ─ N PAGO
 
-## 📐 Diseño Conceptual (UML)
+# Codigo UML
 
-A continuación se presenta el diagrama de clases generado en **StarUML** que modela los requerimientos descritos en la entrevista:
+entity INQUILINO {
+  *id_inquilino : INT
+  ci : VARCHAR
+  nombre : VARCHAR
+  apellido : VARCHAR
+  telefono : VARCHAR
+}
+
+entity CASA {
+  *id_casa : INT
+  direccion : VARCHAR
+  zona : VARCHAR
+  habitaciones : INT
+  estado : VARCHAR
+}
+
+entity CONTRATO {
+  *id_contrato : INT
+  fecha_inicio : DATE
+  fecha_fin : DATE
+  monto_mensual : DECIMAL
+}
+
+entity PAGO {
+  *id_pago : INT
+  fecha_pago : DATE
+  monto : DECIMAL
+  metodo : VARCHAR
+}
+
+INQUILINO ||--o{ CONTRATO
+CASA ||--o{ CONTRATO
+CONTRATO ||--o{ PAGO
