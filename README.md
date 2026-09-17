@@ -64,7 +64,7 @@ INQUILINO 1 ─ N CONTRATO
 CASA 1 ─ N CONTRATO
 CONTRATO 1 ─ N PAGO
 
-# Codigo UML
+# ESQUEMA SQL
 
 entity INQUILINO {
   *id_inquilino : INT
