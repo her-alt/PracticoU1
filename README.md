@@ -32,6 +32,7 @@ Desarrollar una base de datos relacional para ayudar al empresario a gestionar d
 las casas disponibles y ocupadas, así como el registro y seguimiento de los pagos correspondientes a cada alquiler.
 
 **Registrar** la información personal de los clientes de manera organizada.
+
 **Registrar y controlar** las casas disponibles y ocupadas, incluyendo sus características y datos relevantes.
 **Relacionar** cada cliente con la casa que tiene alquilada.
 **Registrar los pagos** realizados por cada cliente, incluyendo fecha, monto y periodo correspondiente.
