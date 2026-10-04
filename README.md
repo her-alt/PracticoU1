@@ -31,6 +31,14 @@ quiero poder consultar qué casas están disponibles y cuáles están alquiladas
 Desarrollar una base de datos relacional para ayudar al empresario a gestionar de manera organizada la información de sus clientes,
 las casas disponibles y ocupadas, así como el registro y seguimiento de los pagos correspondientes a cada alquiler.
 
+**Registrar** la información personal de los clientes de manera organizada.
+**Registrar y controlar** las casas disponibles y ocupadas, incluyendo sus características y datos relevantes.
+**Relacionar** cada cliente con la casa que tiene alquilada.
+**Registrar los pagos** realizados por cada cliente, incluyendo fecha, monto y periodo correspondiente.
+**Consultar** el estado de moderno de la casa que desee con la informacion y detalles correspondientes.
+**Facilitar la administración** de la informaci+on mediante un sistema que permita realizar consultas y actualizar 
+los registros de manera sencilla.
+
 **Suposiciones:**
 
 * El inquilino se identifica por su CI.
