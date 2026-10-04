@@ -27,6 +27,10 @@ Quiero registrar los datos de cada casa, como su dirección, zona, número de ha
 También necesito saber quién está alquilando cada casa, desde qué fecha hasta qué fecha y si realizó el pago correspondiente. Además,
 quiero poder consultar qué casas están disponibles y cuáles están alquiladas.
 
+## Objetivo Principal
+Desarrollar una base de datos relacional para ayudar al empresario a gestionar de manera organizada la información de sus clientes,
+las casas disponibles y ocupadas, así como el registro y seguimiento de los pagos correspondientes a cada alquiler.
+
 **Suposiciones:**
 
 * El inquilino se identifica por su CI.
