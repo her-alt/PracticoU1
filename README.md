@@ -81,12 +81,6 @@ los registros de manera sencilla.
 * Apellido
 * Teléfono
  
-**CASA**
-* id_casa(PK)
-* Dirección
-* Zona
-* Habitaciones
-* Estado
 
 **CONTRATO**
 * id_contrato 
