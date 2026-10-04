@@ -96,10 +96,13 @@ los registros de manera sencilla.
 * id_casa
 
 **PAGO**
-* id_pago 
-* Fecha_pago
-* Monto
-* Método
+* id_pago
+* id_contrato
+* fecha_pago
+* monto
+* metodo_pago
+* estado_pago
+* numero_pago
 
 **Cardinalidades**
 INQUILINO 1 ─ N CONTRATO
