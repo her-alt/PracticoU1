@@ -14,10 +14,6 @@ o empresa de alquiler de viviendas.
 *   **Entrevistado:** Hernan Fernandez/Dueño de la casa en alquiler
 
 ---
-## Problema Principal
-Quiero registrar los datos de cada casa, como su dirección, zona, número de habitaciones, precio mensual y estado.
-También necesito saber quién está alquilando cada casa, desde qué fecha hasta qué fecha y si realizó el pago correspondiente. Además,
-quiero poder consultar qué casas están disponibles y cuáles están alquiladas.
 
 ## 🏠 Sistema de alquiler y gestión de casas
 # Narración del cliente 
@@ -25,6 +21,11 @@ quiero poder consultar qué casas están disponibles y cuáles están alquiladas
 > Quiero registrar los datos de cada casa, como su dirección, zona, número de habitaciones, precio mensual y estado.
 > También necesito saber quién está alquilando cada casa, desde qué fecha hasta qué fecha y si realizó el pago correspondiente. Además,
 > quiero poder consultar qué casas están disponibles y cuáles están alquiladas”
+
+## Problema Principal
+Quiero registrar los datos de cada casa, como su dirección, zona, número de habitaciones, precio mensual y estado.
+También necesito saber quién está alquilando cada casa, desde qué fecha hasta qué fecha y si realizó el pago correspondiente. Además,
+quiero poder consultar qué casas están disponibles y cuáles están alquiladas.
 
 **Suposiciones:**
 
