@@ -55,8 +55,27 @@ los registros de manera sencilla.
 
 # Entidades y atributos
 
+**PROPIETARIO**
+* id_propietario
+* CI
+* Nombre
+* Apellido
+* Telefono
+
+**CASA**
+* id_casa
+* habitaciones
+* baño
+* precio_de_venta
+* estado_de_casa
+* numero_de_pisos
+* garaje
+* dirección
+* ciudad
+* zona
+ 
 **INQUILINO**
-* id_inquilino(PK)
+* id_inquilino
 * CI
 * Nombre
 * Apellido
@@ -70,13 +89,20 @@ los registros de manera sencilla.
 * Estado
 
 **CONTRATO**
-* id_contrato (PK)
+* id_contrato 
 * Fecha_inicio
 * Fecha_fin
-* Monto_mensual
+* precio_acordado
+* plazo_pago
+* estado
+* forma_pago
+* observaciones
+* id_propietario
+* id_cliente
+* id_casa
 
 **PAGO**
-* id_pago (PK)
+* id_pago 
 * Fecha_pago
 * Monto
 * Método
