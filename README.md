@@ -107,3 +107,5 @@ los registros de manera sencilla.
 # Relaciones
 
 # Unidad V : Normalización y Dependencias Funcionales
+
+1. Claves Candidatas y Dependencias Funcionales
