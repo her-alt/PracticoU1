@@ -109,3 +109,9 @@ los registros de manera sencilla.
 # Unidad V : Normalización y Dependencias Funcionales
 
 1. Claves Candidatas y Dependencias Funcionales
+
+| Nivel | Meta práctica |
+|------|---------------|
+| Básico | Detectar violaciones de 1FN y 2FN |
+| Medio | Llevar esquemas reales a 3FN documentando pasos |
+| Reto | Analizar trade-offs entre FNBC y conservación de dependencias |
