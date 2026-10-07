@@ -110,7 +110,7 @@ los registros de manera sencilla.
 
 1. Claves Candidatas y Dependencias Funcionales
 
-| Nivel | Meta práctica |
+| Entidad | Clave candidata |
 |------|---------------|
 | Básico | Detectar violaciones de 1FN y 2FN |
 | Medio | Llevar esquemas reales a 3FN documentando pasos |
