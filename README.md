@@ -112,6 +112,9 @@ los registros de manera sencilla.
 
 | Entidad | Clave candidata |
 |------|---------------|
-| Básico | Detectar violaciones de 1FN y 2FN |
-| Medio | Llevar esquemas reales a 3FN documentando pasos |
-| Reto | Analizar trade-offs entre FNBC y conservación de dependencias |
+| Propietario | id_propietario |
+| Cliente | id_cliente |
+| Casa | id_casa |
+| Contrato | id_contrato |
+| Pago | id_contrato |
+| Cuota | nro_cuota |
