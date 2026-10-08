@@ -123,4 +123,11 @@ los registros de manera sencilla.
 
 | ID_Propietario | CI | Nombre | Apellido | Telefono |
 |------|------|------|-------|------|
-| 1 | 56321208 | María | Flores | 73259012 | 
+| 1 | 47902834 | Hernán | Choque Fernandez | 73259012 |
+
+| ID_Cliente | CI | Nombre | Apellido | Telefono |
+|------|------|------|-------|------|
+| 1 | 56321208 | María | Flores | 73259012 |
+| 2 | 45872136 | Juan | Mamani | 76543210 |
+| 3 | 62145879 | Carlos | Quispe | 71234567 |
+| 4 | 
