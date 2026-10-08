@@ -120,6 +120,7 @@ los registros de manera sencilla.
 | Cuota | nro_cuota |
 
 **Primer Forma Normal (1NF)**
+
 | ID_Propietario | CI | | Nombre | Apellido | | Teléfono |
 |------|---------------|
 | 1 | | 56321208 | | Maria | | Flores | | 73259012 |
