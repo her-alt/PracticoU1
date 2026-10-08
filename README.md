@@ -119,7 +119,7 @@ los registros de manera sencilla.
 | Pago | id_contrato |
 | Cuota | nro_cuota |
 
-**Primer Forma Normal (1NF)**
+## **Primer Forma Normal (1NF)**
 
 **PROPIETARIO**
 | ID_Propietario | CI | Nombre | Apellido | Telefono |
