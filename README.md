@@ -188,3 +188,34 @@ los registros de manera sencilla.
 | 2 | 8 | 13/11/2026 | 3800 |
 | 1 | 3 | 22/07/2021 | 2500 |
 | 7 | 5 | 10/09/2024 | 3000 |
+
+## Tercera Forma Normal (3NF)
+**PROPIETARIO**
+| ID_Propietario | CI | Nombre | Apellido | Telefono |
+|------|------|------|-------|------|
+| 1 | 47902834 | Hernán | Choque Fernandez | 73259012 |
+
+**IQUILINO**
+| ID_Inquilino | CI | Nombre | Apellido | Telefono |
+|------|------|------|-------|------|
+| 3 | 62145879 | Carlos | Quispe | 71234567 |
+| 1 | 56321208 | María | Flores | 73259012 |
+
+**CASA**
+|ID_Casa | Dirección | Ciudad | Precio | Estado | ID-Propietario |
+|------|------|------|-------|------|------|
+| 1 | Av. Arce | La Paz | 2500 | Disponible | 1 |
+| 3 | Av. Busch | Tarija | 2200 | Disponible | 1 |
+| 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada | 1 |
+
+**CONTRATO**
+| ID_Contrato | ID_Cliente | ID_Casa | Fecha_Inicio | Fecha_Final |
+|------|------|------|------|------|
+| 1 | 3 | 4 | 23/10/2022 | 11/03/2023 |
+| 3 | 5 | 8 | 08/11/2021 | 05/12/2026 |
+
+**PAGO**
+| ID_Pago | ID_Contrato | Fecha_Pago | Monto | 
+|------|------|------|------|
+| 2 | 8 | 13/11/2026 | 3800 |
+| 7 | 5 | 10/09/2024 | 3000 |
