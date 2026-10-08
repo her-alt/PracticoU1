@@ -41,7 +41,7 @@ las casas disponibles y ocupadas, así como el registro y seguimiento de los pag
 
 **Consultar** el estado de moderno de la casa que desee con la informacion y detalles correspondientes.
 
-**Facilitar la administración** de la informaci+on mediante un sistema que permita realizar consultas y actualizar 
+**Facilitar la administración** de la informacion mediante un sistema que permita realizar consultas y actualizar 
 los registros de manera sencilla.
 
 **Suposiciones:**
