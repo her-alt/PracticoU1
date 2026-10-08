@@ -122,7 +122,6 @@ los registros de manera sencilla.
 **Primer Forma Normal (1NF)**
 
 **PROPIETARIO**
-
 | ID_Propietario | CI | Nombre | Apellido | Telefono |
 |------|------|------|-------|------|
 | 1 | 47902834 | Hernán | Choque Fernandez | 73259012 |
@@ -133,3 +132,11 @@ los registros de manera sencilla.
 | 1 | 56321208 | María | Flores | 73259012 |
 | 2 | 45872136 | Juan | Mamani | 76543210 |
 | 3 | 62145879 | Carlos | Quispe | 71234567 |
+
+**CASA**
+|ID_Casa | Dirección | Ciudad | Precio | Estado |
+|------|------|------|-------|------|
+| 1 | Av. Arce | La Paz | 2500 | Disponible |
+| 2 | Calle Murillo | Cochabamba | 1800 | Alquilada |
+| 3 | Av. Busch | Tarija | 2200 | Disponible |
+| 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada |
