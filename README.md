@@ -147,3 +147,5 @@ los registros de manera sencilla.
 | 1 | 22/07/2026 | 2500 |
 | 2 | 13/11/2026 | 1800 |
 | 3 | 10/05/2026 | 2200 |
+
+**Segunda Forma Normal (2NF)**
