@@ -133,4 +133,3 @@ los registros de manera sencilla.
 | 1 | 56321208 | María | Flores | 73259012 |
 | 2 | 45872136 | Juan | Mamani | 76543210 |
 | 3 | 62145879 | Carlos | Quispe | 71234567 |
-| 4 | 
