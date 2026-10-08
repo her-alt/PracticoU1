@@ -150,13 +150,13 @@ los registros de manera sencilla.
 | 3 | 7 | 5 | 08/11/2021 | 05/12/2026 |
 
 **Pago**
-| ID_Contrato | Fecha | Monto |
-|------|------|------|
-| 1 | 22/07/2026 | 2500 |
-| 2 | 13/11/2026 | 1800 |
-| 3 | 10/05/2026 | 2200 |
+|ID_Pago | ID_Contrato | Fecha | Monto |
+|------|------|------|------|
+| 1 | 3 | 22/07/2026 | 2500 |
+| 2 | 8 | 13/11/2026 | 3800 |
+| 3 | 6 | 10/05/2026 | 2200 |
 
-**Segunda Forma Normal (2NF)**
+## **Segunda Forma Normal (2NF)**
 
 **PROPIETARIO**
 | ID_Propietario | CI | Nombre | Apellido | Telefono |
@@ -181,3 +181,10 @@ los registros de manera sencilla.
 |------|------|------|------|------|
 | 2 | 5 | 1 | 23 /10/2022 | 11/03/2023 |
 | 3 | 7 | 5 | 08/11/2021 | 05/12/2026 |
+
+**PAGO**
+| ID_Pago | ID_Contrato | Fecha | Monto |
+|------|------|------|------|
+| 2 | 8 | 13/11/2026 | 3800 |
+| 1 | 3 | 22/07/2021 | 2500 |
+| 7 | 5 | 10/09/2024 | 3000 |
