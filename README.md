@@ -140,3 +140,10 @@ los registros de manera sencilla.
 | 2 | Calle Murillo | Cochabamba | 1800 | Alquilada |
 | 3 | Av. Busch | Tarija | 2200 | Disponible |
 | 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada |
+
+**Pago**
+| ID_Contrato | Fecha | Monto |
+|------|------|------|
+| 1 | 22/07/2026 | 2500 |
+| 2 | 13/11/2026 | 1800 |
+| 3 | 10/05/2026 | 2200 |
