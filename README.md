@@ -120,6 +120,7 @@ los registros de manera sencilla.
 | Cuota | nro_cuota |
 
 **Primer Forma Normal (1NF)**
+
 **PROPIETARIO**
 
 | ID_Propietario | CI | Nombre | Apellido | Telefono |
