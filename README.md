@@ -132,6 +132,7 @@ los registros de manera sencilla.
 | 1 | 56321208 | María | Flores | 73259012 |
 | 2 | 45872136 | Juan | Mamani | 76543210 |
 | 3 | 62145879 | Carlos | Quispe | 71234567 |
+| 4 | 78945612 | Pedro | Choque | 70123456 |
 
 **CASA**
 |ID_Casa | Dirección | Ciudad | Precio | Estado |
@@ -141,6 +142,13 @@ los registros de manera sencilla.
 | 3 | Av. Busch | Tarija | 2200 | Disponible |
 | 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada |
 
+**CONTRATO**
+| ID_Contrato | ID_Inquilino | ID_Casa | Fecha_Inicio | Fecha_Final |
+|------|------|------|------|------|
+| 1 | 8 | 3 | 10/05/2024 | 23/11/2025 |
+| 2 | 5 | 1 | 23 /10/2022 | 11/03/ 2023 |
+| 3 | 7 | 5 | 08/11/2021 | 05/12/2026 |
+
 **Pago**
 | ID_Contrato | Fecha | Monto |
 |------|------|------|
@@ -149,3 +157,27 @@ los registros de manera sencilla.
 | 3 | 10/05/2026 | 2200 |
 
 **Segunda Forma Normal (2NF)**
+
+**PROPIETARIO**
+| ID_Propietario | CI | Nombre | Apellido | Telefono |
+|------|------|------|-------|------|
+| 1 | 47902834 | Hernán | Choque Fernandez | 73259012 |
+
+**IQUILINO**
+| ID_Inquilino | CI | Nombre | Apellido | Telefono |
+|------|------|------|-------|------|
+| 3 | 62145879 | Carlos | Quispe | 71234567 |
+| 1 | 56321208 | María | Flores | 73259012 |
+
+**CASA**
+|ID_Casa | Dirección | Ciudad | Precio | Estado |
+|------|------|------|-------|------|
+| 1 | Av. Arce | La Paz | 2500 | Disponible |
+| 3 | Av. Busch | Tarija | 2200 | Disponible |
+| 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada |
+
+**CONTRATO**
+| ID_Contrato | ID_Inquilino | ID_Casa | Fecha_Inicio | Fecha_Final |
+|------|------|------|------|------|
+| 2 | 5 | 1 | 23 /10/2022 | 11/03/2023 |
+| 3 | 7 | 5 | 08/11/2021 | 05/12/2026 |
