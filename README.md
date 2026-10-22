@@ -106,50 +106,42 @@ los registros de manera sencilla.
 
 # Relaciones
 
-# Unidad V : Normalización y Dependencias Funcionales
+# Normalización y Dependencias Funcionales
 
-1. Claves Candidatas y Dependencias Funcionales
+1. 
 
-| Entidad | Clave candidata |
+| Entidad | Clave |
 |------|---------------|
-| Propietario | id_propietario |
-| Cliente | id_cliente |
+| inquilino | id_inquilino |
 | Casa | id_casa |
 | Contrato | id_contrato |
-| Pago | id_contrato |
-| Cuota | nro_cuota |
+| Pago | id_pago |
 
 ## **Primer Forma Normal (1NF)**
 
-**PROPIETARIO**
-| ID_Propietario | CI | Nombre | Apellido | Telefono |
-|------|------|------|-------|------|
-| 1 | 47902834 | Hernán | Choque Fernandez | 73259012 |
-
-**INQUILINO**
-| ID_Inquilino | CI | Nombre | Apellido | Telefono |
+**Tabla inquilino**
+| id_inquilino | CI | Nombre | Apellido | Telefono |
 |------|------|------|-------|------|
 | 1 | 56321208 | María | Flores | 73259012 |
 | 2 | 45872136 | Juan | Mamani | 76543210 |
 | 3 | 62145879 | Carlos | Quispe | 71234567 |
 | 4 | 78945612 | Pedro | Choque | 70123456 |
 
-**CASA**
-|ID_Casa | Dirección | Ciudad | Precio | Estado |
-|------|------|------|-------|------|
-| 1 | Av. Arce | La Paz | 2500 | Disponible |
-| 2 | Calle Murillo | Cochabamba | 1800 | Alquilada |
-| 3 | Av. Busch | Tarija | 2200 | Disponible |
-| 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada |
+**Tabla alquiler**
+| id_alquiler (PK) | id_cliente (FK) | id_casa | 
+|------|------|------|
+| 1 | 1 | 1 |
+| 2 | 1 | 2 | 
+| 3 | 2 | 3 | 
 
-**CONTRATO**
+**Tabla contrato**
 | ID_Contrato | ID_Inquilino | ID_Casa | Fecha_Inicio | Fecha_Final |
 |------|------|------|------|------|
-| 1 | 8 | 3 | 10/05/2024 | 23/11/2025 |
-| 2 | 5 | 1 | 23 /10/2022 | 11/03/ 2023 |
-| 3 | 7 | 5 | 08/11/2021 | 05/12/2026 |
+| 1 | 8 | 1 | 10/05/2024 | 23/11/2025 |
+| 2 | 5 | 2 | 23 /10/2022 | 11/03/ 2023 |
+| 3 | 7 | 3 | 08/11/2021 | 05/12/2026 |
 
-**Pago**
+**Tabla pago**
 |ID_Pago | ID_Contrato | Fecha | Monto |
 |------|------|------|------|
 | 1 | 3 | 22/07/2026 | 2500 |
@@ -158,64 +150,52 @@ los registros de manera sencilla.
 
 ## **Segunda Forma Normal (2NF)**
 
-**PROPIETARIO**
-| ID_Propietario | CI | Nombre | Apellido | Telefono |
-|------|------|------|-------|------|
-| 1 | 47902834 | Hernán | Choque Fernandez | 73259012 |
+**Tabla inquilino**
+| id_inquilino (PK) | Nombre |
+|------|------|
+| 3 | Carlos |
+| 1 | María | 
 
-**IQUILINO**
-| ID_Inquilino | CI | Nombre | Apellido | Telefono |
-|------|------|------|-------|------|
-| 3 | 62145879 | Carlos | Quispe | 71234567 |
-| 1 | 56321208 | María | Flores | 73259012 |
+**Tabla casa**
+|id_casa (PK) | dirección |
+|------|------|
+| 10 | Calle Marketin |
+| 11 | Calle B |
 
-**CASA**
-|ID_Casa | Dirección | Ciudad | Precio | Estado |
-|------|------|------|-------|------|
-| 1 | Av. Arce | La Paz | 2500 | Disponible |
-| 3 | Av. Busch | Tarija | 2200 | Disponible |
-| 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada |
+**Tabla contrato**
+| id_contrato (FK) | id_inquilino (PK) | id_casa (PK) | fecha_inicio |
+|------|------|------|-------|
+| 1 | 1 | 10 | 01/12/2022 |
+| 2 | 2 | 11 | 10/11/2021 |
 
-**CONTRATO**
-| ID_Contrato | ID_Inquilino | ID_Casa | Fecha_Inicio | Fecha_Final |
-|------|------|------|------|------|
-| 2 | 5 | 1 | 23 /10/2022 | 11/03/2023 |
-| 3 | 7 | 5 | 08/11/2021 | 05/12/2026 |
-
-**PAGO**
-| ID_Pago | ID_Contrato | Fecha | Monto |
-|------|------|------|------|
-| 2 | 8 | 13/11/2026 | 3800 |
-| 1 | 3 | 22/07/2021 | 2500 |
-| 7 | 5 | 10/09/2024 | 3000 |
+**Tabla pago**
+| id_pago (PK) | id_contrato | Monto |
+|------|------|------|
+| 1 | 3 | 3800 |
+| 1 | 4 | 2500 |
+| 3 | 1 | 3000 |
 
 ## Tercera Forma Normal (3NF)
-**PROPIETARIO**
-| ID_Propietario | CI | Nombre | Apellido | Telefono |
-|------|------|------|-------|------|
-| 1 | 47902834 | Hernán | Choque Fernandez | 73259012 |
+**Tabla inquilino**
+| id_inquilino (PK) | Nombre |
+|------|------|
+| 1 | | Carlos |
+| 2 | María |
 
-**IQUILINO**
-| ID_Inquilino | CI | Nombre | Apellido | Telefono |
-|------|------|------|-------|------|
-| 3 | 62145879 | Carlos | Quispe | 71234567 |
-| 1 | 56321208 | María | Flores | 73259012 |
+**Tabla casa**
+| id_casa (PK) | dirección |
+|------|-------|
+| 1 | Calle Marketing |
+| 3 | Calle B |
 
-**CASA**
-|ID_Casa | Dirección | Ciudad | Precio | Estado | ID-Propietario |
-|------|------|------|-------|------|------|
-| 1 | Av. Arce | La Paz | 2500 | Disponible | 1 |
-| 3 | Av. Busch | Tarija | 2200 | Disponible | 1 |
-| 4 | Ventura Mall | Santa Cruz | 1500 | Alquilada | 1 |
+**tabla contrato**
+| id_contrato (FK) | id_cliente (PK) | id_casa (PK) | Fecha_Inicio | 
+|------|------|------|------|
+| 1 | 3 | 4 | 23/10/2022 | 
+| 3 | 5 | 8 | 08/11/2021 | 
 
-**CONTRATO**
-| ID_Contrato | ID_Cliente | ID_Casa | Fecha_Inicio | Fecha_Final |
-|------|------|------|------|------|
-| 1 | 3 | 4 | 23/10/2022 | 11/03/2023 |
-| 3 | 5 | 8 | 08/11/2021 | 05/12/2026 |
-
-**PAGO**
-| ID_Pago | ID_Contrato | Fecha_Pago | Monto | 
+**Tabla pago**
+| id_pago (PK) | id_contrato (PK) | fecha_pago | Monto | 
 |------|------|------|------|
 | 2 | 8 | 13/11/2026 | 3800 |
 | 7 | 5 | 10/09/2024 | 3000 |
