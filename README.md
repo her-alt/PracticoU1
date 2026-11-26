@@ -197,3 +197,23 @@ los registros de manera sencilla.
 | 1 | 5632218 | Maria | Flores | 73259012 | maria.f@gmail.com |
 | 2 | 45872136 | Juan| Mamani | 76543210 | juan.m@gmail.com |
 | 3 | 62145879 | Carlos | Quispe | 7123904 | carlos.w@gmail.com |
+
+**Tabla casa**
+|id_casa(PK) | dirrecion | ciudad | zona | habitaciones | precio_mensual | estado_casa | 
+| -------- | -------- | --------- | ------- | -------- | -------- | --------|
+| 1 | Av Bush | Santa Cruz | Equipetrol | 3 | 3500 | Alquilada |
+| 2 | Calle Libertad | Santa Cruz | Centro | 2 | 2200 | Alquilada |
+| 3 | Radial 26 | Santa Cruz | Norte | 4 | 5300 | Disponible |
+
+**Tabla contrato**
+| id_contrato (PK) | id_inquilino (FK) | fecha_inicio | fecha_fin | precio_acordado | estado_contrato |
+| --------- | --------- | --------- | --------- | -------- | -------- |
+| 1 | 1 | 1 | 10/05/2023 | 10/03/2025 | 3500 | Vigente |
+| 2 | 2 | 2 | 1/08/2020 | 20/10/2024 | 5300 | Vigente |
+
+**Tabla Pago**
+| id_pago (PK) | id_contrato (FK) | numero _pago | fecha_pago | monto | estado_pago |
+| --------- | --------- | -------- | -------- | -------- | ---------- |
+| 1 | 1 | 1 | 10/03/2024 | 3500 | Pagado |
+| 2 | 1 | 2 | 09/06/2022 | 3500 | Pagado |
+| 3 | 2 | 1 | 01/08/2020 | 2200 | Pagado |
