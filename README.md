@@ -190,26 +190,9 @@ los registros de manera sencilla.
 | 2 | 1 | 01/08/2026 | 2200 | Pagado |
 
 ## Tercera Forma Normal (3NF)
-**Tabla inquilino**
-| id_inquilino (PK) | Nombre |
-|------|------|
-| 1 | | Carlos |
-| 2 | María |
 
-**Tabla casa**
-| id_casa (PK) | dirección |
-|------|-------|
-| 1 | Calle Marketing |
-| 3 | Calle B |
-
-**tabla contrato**
-| id_contrato (FK) | id_cliente (PK) | id_casa (PK) | Fecha_Inicio | 
-|------|------|------|------|
-| 1 | 3 | 4 | 23/10/2022 | 
-| 3 | 5 | 8 | 08/11/2021 | 
-
-**Tabla pago**
-| id_pago (PK) | id_contrato (PK) | fecha_pago | Monto | 
-|------|------|------|------|
-| 2 | 8 | 13/11/2026 | 3800 |
-| 7 | 5 | 10/09/2024 | 3000 |
+**Tabla Inquilino**
+| id_inquilino(PK) | ci | nombre | apellido | telefono | correo |
+| ------- | --------- | ------- | -------- | -------- | ---------|
+| 1 | Av Bush | Santa Cruz | Equipetrol | 3 | 2 | 3500 | maria.f@gmail.com |
+| 2 | Calle Libertad | Santa Cruz | Centro | 2 | 1 | 2200 | juan.m@gmail.com |
