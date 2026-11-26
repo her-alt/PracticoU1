@@ -135,20 +135,6 @@ los registros de manera sencilla.
 
 ## **Primer Forma Normal (1NF)**
 
-**Tabla inquilino**
-| id_inquilino (PK) | nombre | apellido | telefono | correo |
-| ------- | ------- | ------ | ------ | ----- |
-| 1 | María | Flores | 73259012 | maria.f@email.com |
-| 2 | Juan | Mamani | 76543210 | juan.m@email.com |
-| 3 | Carlos | Quispe | 71234567 | carlos.q@email.com |
-
-**Tabla casa**
-| id_casa (PK) | precio_mensual | estado_casa |
-| ------- | ------- | ------ |
-| 1 | 3500 | Alquilada |
-| 2 | 2200 | Alquilada |
-| 3 | 4200 | Disponible |
-
 **Tabla contrato**
 | id_contrato (PK) | id_inquilino (FK) | id_casa (FK) | fecha_inicio | fecha_fin | precio_acordado | estado_contrato |
 | ------- | ------- | ------- | -------- | ------- | ------- | --------- |
@@ -163,18 +149,6 @@ los registros de manera sencilla.
 | 3 | 2 | 01/08/2026 | 2200 | Pagado |
 
 ## **Segunda Forma Normal (2NF)**
-
-**Tabla inquilino**
-| id_inquilino (PK) | Nombre |
-|------|------|
-| 3 | Carlos |
-| 1 | María | 
-
-**Tabla casa**
-|id_casa (PK) | dirección |
-|------|------|
-| 10 | Calle Marketin |
-| 11 | Calle B |
 
 **Tabla contrato**
 | id_contrato (PK) | id_inquilino | id_casa | fecha_inicio | fecha_fin | precio_acordado |
