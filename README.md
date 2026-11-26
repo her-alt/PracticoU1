@@ -53,13 +53,6 @@ los registros de manera sencilla.
 
 # Entidades y atributos
 
-**PROPIETARIO**
-* id_propietario
-* CI
-* Nombre
-* Apellido
-* Telefono
-
 **CASA**
 * id_casa
 * habitaciones
