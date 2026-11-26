@@ -63,6 +63,7 @@ los registros de manera sencilla.
 * dirección
 * ciudad
 * zona
+* precio_mensual
  
 **INQUILINO**
 * id_inquilino
