@@ -64,7 +64,6 @@ los registros de manera sencilla.
 * id_casa
 * habitaciones
 * baño
-* precio_de_venta
 * estado_de_casa
 * numero_de_pisos
 * garaje
@@ -91,9 +90,6 @@ los registros de manera sencilla.
 * estado
 * forma_pago
 * observaciones
-* id_propietario
-* id_cliente
-* id_casa
 
 **PAGO**
 * id_pago
