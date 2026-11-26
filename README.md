@@ -142,12 +142,12 @@ los registros de manera sencilla.
 | 2 | 45872136 | Juan | Mamani | 76543210 | juan.m@email.com |
 | 3 | 62145879 | Carlos | Quispe | 71234567 | carlos.q@email.com |
 
-**Tabla alquiler**
-| id_alquiler (PK) | id_cliente (FK) | id_casa | 
-|------|------|------|
-| 1 | 1 | 1 |
-| 2 | 1 | 2 | 
-| 3 | 2 | 3 | 
+**Tabla casa**
+| id_casa (PK) | direccion | zona | habitaciones | baños | precio_mensual | estado_casa |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Av. Bush #120 | Equipetrol | 3 | 2 | 3500 | Alquilada |
+| 2 | Calle Libertad #45 | Centro | 2 | 1 | 2200 | Alquilada |
+| 3 | Radial 26 #890 | Norte | 4 | 3 | 4200 | Disponible |
 
 **Tabla contrato**
 | ID_Contrato | ID_Inquilino | ID_Casa | Fecha_Inicio | Fecha_Final |
