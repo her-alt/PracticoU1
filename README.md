@@ -143,11 +143,11 @@ los registros de manera sencilla.
 | 3 | Carlos | Quispe | 71234567 | carlos.q@email.com |
 
 **Tabla casa**
-| id_casa (PK) | direccion | zona | habitaciones | baños | precio_mensual | estado_casa |
-| ------- | ------ | ------ | ------ | ------- | ------- | ------ |
-| 1 | Av. Bush #120 | Equipetrol | 3 | 2 | 3500 | Alquilada |
-| 2 | Calle Libertad #45 | Centro | 2 | 1 | 2200 | Alquilada |
-| 3 | Radial 26 #890 | Norte | 4 | 3 | 4200 | Disponible |
+| id_casa (PK) | precio_mensual | estado_casa |
+| ------- | ------- | ------ |
+| 1 | 3500 | Alquilada |
+| 2 | 2200 | Alquilada |
+| 3 | 4200 | Disponible |
 
 **Tabla contrato**
 | id_contrato (PK) | id_inquilino (FK) | id_casa (FK) | fecha_inicio | fecha_fin | precio_acordado | estado_contrato |
@@ -156,11 +156,11 @@ los registros de manera sencilla.
 | 2 | 2 | 2 | 01/08/2026 | 01/02/2027 | 2200 | Vigente |
 
 **Tabla pago**
-|ID_Pago | ID_Contrato | Fecha | Monto |
-|------|------|------|------|
-| 1 | 3 | 22/07/2026 | 2500 |
-| 2 | 8 | 13/11/2026 | 3800 |
-| 3 | 6 | 10/05/2026 | 2200 |
+| id_pago (PK) | id_contrato (FK) | fecha_pago | monto | estado_pago |
+| ------- | ------- | ------- | ------- | -------- |
+| 1 | 1 | 10/05/2026 | 3500 | Pagado |
+| 2 | 1 | 09/06/2026 | 3500 | Pagado |
+| 3 | 2 | 01/08/2026 | 2200 | Pagado |
 
 ## **Segunda Forma Normal (2NF)**
 
