@@ -194,5 +194,6 @@ los registros de manera sencilla.
 **Tabla Inquilino**
 | id_inquilino(PK) | ci | nombre | apellido | telefono | correo |
 | ------- | --------- | ------- | -------- | -------- | ---------|
-| 1 | Av Bush | Santa Cruz | Equipetrol | 3 | 2 | 3500 | maria.f@gmail.com |
-| 2 | Calle Libertad | Santa Cruz | Centro | 2 | 1 | 2200 | juan.m@gmail.com |
+| 1 | 5632218 | Maria | Flores | 73259012 | maria.f@gmail.com |
+| 2 | 45872136 | Juan| Mamani | 76543210 | juan.m@gmail.com |
+| 3 | 62145879 | Carlos | Quispe | 7123904 | carlos.w@gmail.com |
