@@ -177,17 +177,17 @@ los registros de manera sencilla.
 | 11 | Calle B |
 
 **Tabla contrato**
-| id_contrato (FK) | id_inquilino (PK) | id_casa (PK) | fecha_inicio |
-|------|------|------|-------|
-| 1 | 1 | 10 | 01/12/2022 |
-| 2 | 2 | 11 | 10/11/2021 |
+| id_contrato (PK) | id_inquilino | id_casa | fecha_inicio | fecha_fin | precio_acordado |
+| ----- | ----- | ----- | ----- | ------- | ----- |
+| 1 | 1 | 56321208 | María Flores | 1 | Av. Bush #120 | Equipetrol | 10/05/2026 | 10/05/2027 | 3500 |
+| 2 | 2 | 45872136 | Juan Mamani | 2 | Calle Libertad #45 | Centro | 01/08/2026 | 01/02/2027 | 2200 |
 
-**Tabla pago**
-| id_pago (PK) | id_contrato | Monto |
-|------|------|------|
-| 1 | 3 | 3800 |
-| 1 | 4 | 2500 |
-| 3 | 1 | 3000 |
+**Tabla PAGO**
+| id_contrato (PK, FK) | numero_pago (PK) | fecha_pago | monto | estado_pago |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 1 | 10/05/2026 | 3500 | Pagado |
+| 1 | 2 | 09/06/2026 | 3500 | Pagado |
+| 2 | 1 | 01/08/2026 | 2200 | Pagado |
 
 ## Tercera Forma Normal (3NF)
 **Tabla inquilino**
