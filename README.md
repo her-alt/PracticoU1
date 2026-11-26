@@ -136,12 +136,11 @@ los registros de manera sencilla.
 ## **Primer Forma Normal (1NF)**
 
 **Tabla inquilino**
-| id_inquilino | CI | Nombre | Apellido | Telefono |
-|------|------|------|-------|------|
-| 1 | 56321208 | María | Flores | 73259012 |
-| 2 | 45872136 | Juan | Mamani | 76543210 |
-| 3 | 62145879 | Carlos | Quispe | 71234567 |
-| 4 | 78945612 | Pedro | Choque | 70123456 |
+| id_inquilino (PK) | ci | nombre | apellido | telefono | correo |
+| ------- | ------- | ------- | ------ | ------ | ----- |
+| 1 | 56321208 | María | Flores | 73259012 | maria.f@email.com |
+| 2 | 45872136 | Juan | Mamani | 76543210 | juan.m@email.com |
+| 3 | 62145879 | Carlos | Quispe | 71234567 | carlos.q@email.com |
 
 **Tabla alquiler**
 | id_alquiler (PK) | id_cliente (FK) | id_casa | 
