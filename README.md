@@ -98,9 +98,8 @@ los registros de manera sencilla.
 
 # Normalización y Dependencias Funcionales
 
-|id_propietario → ci|
-|nombre| |apellido| |telefono|
-* id_casa → direccion, ciudad, zona, habitaciones, banos, numero_pisos, garaje, precio_mensual, estado_casa, id_propietario
+| id_casa → direccion | 
+| ciudad | | zona | habitaciones, banos, numero_pisos, garaje, precio_mensual, estado_casa, id_propietario
 * id_inquilino → ci, nombre, apellido, telefono, correo
 * id_contrato → id_casa, id_inquilino, fecha_inicio, fecha_fin, precio_acordado, dia_pago, forma_pago, estado_contrato
 * id_pago → id_contrato, numero_pago, periodo_correspondiente, fecha_pago, monto, metodo_pago, estado_pago
