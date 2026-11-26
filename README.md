@@ -78,10 +78,12 @@ los registros de manera sencilla.
 * Nombre
 * Apellido
 * Teléfono
- 
+* correo
 
 **CONTRATO**
-* id_contrato 
+* id_contrato
+* id_casa
+* id_inquilino
 * Fecha_inicio
 * Fecha_fin
 * precio_acordado
