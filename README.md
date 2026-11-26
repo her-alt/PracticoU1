@@ -144,17 +144,16 @@ los registros de manera sencilla.
 
 **Tabla casa**
 | id_casa (PK) | direccion | zona | habitaciones | baños | precio_mensual | estado_casa |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| ------- | ------ | ------ | ------ | ------- | ------- | ------ |
 | 1 | Av. Bush #120 | Equipetrol | 3 | 2 | 3500 | Alquilada |
 | 2 | Calle Libertad #45 | Centro | 2 | 1 | 2200 | Alquilada |
 | 3 | Radial 26 #890 | Norte | 4 | 3 | 4200 | Disponible |
 
 **Tabla contrato**
-| ID_Contrato | ID_Inquilino | ID_Casa | Fecha_Inicio | Fecha_Final |
-|------|------|------|------|------|
-| 1 | 8 | 1 | 10/05/2024 | 23/11/2025 |
-| 2 | 5 | 2 | 23 /10/2022 | 11/03/ 2023 |
-| 3 | 7 | 3 | 08/11/2021 | 05/12/2026 |
+| id_contrato (PK) | id_inquilino (FK) | id_casa (FK) | fecha_inicio | fecha_fin | precio_acordado | estado_contrato |
+| ------- | ------- | ------- | -------- | ------- | ------- | --------- |
+| 1 | 1 | 1 | 10/05/2026 | 10/05/2027 | 3500 | Vigente |
+| 2 | 2 | 2 | 01/08/2026 | 01/02/2027 | 2200 | Vigente |
 
 **Tabla pago**
 |ID_Pago | ID_Contrato | Fecha | Monto |
