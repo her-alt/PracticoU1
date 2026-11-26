@@ -98,7 +98,7 @@ los registros de manera sencilla.
 
 # Normalización y Dependencias Funcionales
 
-| id_casa → direccion | 
+| id_casa → direccion |            
 |----------|
 | ciudad | 
 | zona | 
